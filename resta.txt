@@ -1,2 +1,45 @@
 Resta uno
 Resta dos
+
+.p-button.p-button-icon-only.p-button-rounded {
+    border: 1px solid #309bf3;
+}
+.p-button {
+    background: #e0c249;
+    border: 1px solid #7d6c2a;
+}
+
+.form-control:focus {
+    border-color: #e0c249;
+    box-shadow: 0 0 0 0.25rem rgb(224 194 73);
+}
+.p-button.p-button-text:enabled:active {
+    background: rgba(224, 194, 73, 0.46);
+}
+.p-button.p-button-icon-only.p-button-rounded {
+    border: 1px solid #dece92;
+}
+.p-button:focus {
+    box-shadow: 0 0 0 0.2rem #e0c249;
+}
+.p-button:enabled:hover {
+    background: #7d6c2a;
+    color: #ffffff;
+    border-color: #e0c249;
+}
+.p-button.p-button-text:enabled:hover {
+    background: rgba(33, 150, 243, 0.04);
+}
+.p-dropdown:not(.p-disabled):hover {
+    border-color: #e0c249;
+}
+.p-button.p-button-text:enabled:hover {
+    color: rgb(33, 150, 243);
+    background: rgba(33, 150, 243, 0.04);
+}
+.p-button.p-button-text:enabled:hover {
+    background: rgba(33, 150, 243, 0.04);
+}
+.p-button.p-button-icon-only.p-button-rounded {
+    border: 1px solid #b39c40;
+}
