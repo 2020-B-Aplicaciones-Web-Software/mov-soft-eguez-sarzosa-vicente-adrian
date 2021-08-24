@@ -1,45 +1,36 @@
 Resta uno
 Resta dos
 
-.p-button.p-button-icon-only.p-button-rounded {
-    border: 1px solid #309bf3;
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+    padding: 0px;
 }
-.p-button {
-    background: #e0c249;
-    border: 1px solid #7d6c2a;
+.contenedor-pais {
+    border: 1px solid #888888;
+    margin: 1px;
+    padding: 10px;
+    padding: 6px;
+}
+.texto-pais {
+    text-align: center;
+    padding-top: 3px;
+    margin-left: 61px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 10px;
+    font-weight: bold;
+}
+.pais {
+    width: 100%;
+    max-height: 21px;
+    max-width: 23px;
+    transform: translateY(-4px);
 }
 
-.form-control:focus {
-    border-color: #e0c249;
-    box-shadow: 0 0 0 0.25rem rgb(224 194 73);
+.p-autocomplete-panel .p-autocomplete-items:not(.p-autocomplete-virtualscroll) {
+    background-color: #434342;
 }
-.p-button.p-button-text:enabled:active {
-    background: rgba(224, 194, 73, 0.46);
-}
-.p-button.p-button-icon-only.p-button-rounded {
-    border: 1px solid #dece92;
-}
-.p-button:focus {
-    box-shadow: 0 0 0 0.2rem #e0c249;
-}
-.p-button:enabled:hover {
-    background: #7d6c2a;
-    color: #ffffff;
-    border-color: #e0c249;
-}
-.p-button.p-button-text:enabled:hover {
-    background: rgba(33, 150, 243, 0.04);
-}
-.p-dropdown:not(.p-disabled):hover {
-    border-color: #e0c249;
-}
-.p-button.p-button-text:enabled:hover {
-    color: rgb(33, 150, 243);
-    background: rgba(33, 150, 243, 0.04);
-}
-.p-button.p-button-text:enabled:hover {
-    background: rgba(33, 150, 243, 0.04);
-}
-.p-button.p-button-icon-only.p-button-rounded {
-    border: 1px solid #b39c40;
+
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+    color: white;
 }
