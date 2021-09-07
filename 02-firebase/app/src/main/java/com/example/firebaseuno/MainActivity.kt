@@ -37,6 +37,15 @@ class MainActivity : AppCompatActivity() {
         botonProducto.setOnClickListener {
             irProducto()
         }
+
+        val botonRestaurante = findViewById<Button>(R.id.btn_restaurante)
+        botonRestaurante.setOnClickListener {
+            val intent = Intent(
+                this,
+                DRestaurante::class.java
+            )
+            startActivity(intent)
+        }
     }
 
     fun irProducto(){
@@ -158,16 +167,19 @@ class MainActivity : AppCompatActivity() {
         val botonLogin = findViewById<Button>(R.id.btn_login)
         val botonSalir = findViewById<Button>(R.id.btn_salir)
         val botonProducto = findViewById<Button>(R.id.btn_producto)
+        val botonRestaurante = findViewById<Button>(R.id.btn_restaurante)
         if (BAuthUsuario.usuario != null) {
             textViewBienvenida.text = "Bienvenido ${BAuthUsuario.usuario?.email}"
             botonLogin.visibility = View.INVISIBLE
             botonSalir.visibility = View.VISIBLE
             botonProducto.visibility = View.VISIBLE
+            botonRestaurante.visibility = View.VISIBLE
         } else {
             textViewBienvenida.text = "Ingresa al aplicativo"
             botonLogin.visibility = View.VISIBLE
             botonSalir.visibility = View.INVISIBLE
             botonProducto.visibility = View.INVISIBLE
+            botonRestaurante.visibility = View.INVISIBLE
         }
     }
 
