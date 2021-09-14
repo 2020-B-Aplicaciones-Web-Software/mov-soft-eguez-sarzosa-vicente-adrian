@@ -46,6 +46,34 @@ class MainActivity : AppCompatActivity() {
             )
             startActivity(intent)
         }
+
+
+        val botonMapa = findViewById<Button>(R.id.btn_ir_mapa)
+        botonMapa.setOnClickListener {
+            val intent = Intent(
+                this,
+                FMapsActivity::class.java
+            )
+            startActivity(intent)
+        }
+
+        /*
+        val db = Firebase.firestore
+        val referenciaOrdenes = db
+            .collection("ordenes")
+
+        referenciaOrdenes
+            .whereEqualTo("restaurante.nombre", "adrian")
+            .get()
+            .addOnSuccessListener {
+                for (orden in it){
+                    Log.i("ordenes", "${orden.data}")
+                }
+            }
+            .addOnFailureListener{
+                Log.i("ordenes", "Error")
+            }
+         */
     }
 
     fun irProducto(){
